@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvle Manager Favorites</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/default-styles.css">
+    <script type="text/javascript" src="src/md5.min.js"></script>
+    <script type = "module" src = "src/favorites.js"></script>
+    <script type = "module" src = "src/index.js"></script>
+  </head>
+  <body>
+    <nav class = "navbar has-shadow is-white">
+      <div class = "navbar-brand">
+        <a class="navbar-item" href="home.html">
+          <i class="fas fa-book-open"></i>
+        </a>
+        <a class = "navbar-burger" id = "burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class = "navbar-menu" id="nav-links">
+        <div class="navbar-start">
+          <a class="navbar-item" href="home.html">
+            Home
+          </a>
+          <a class="navbar-item is-hoverable" href="app.html">
+            App
+          </a>
+          <span class="navbar-item has-text-weight-bold">
+            Favorites
+          </span>
+          <a class="navbar-item is-hoverable" href="documentation.html">
+            Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+        <!-- <div class="columns is-vcentered">
+          <div class="column">  
+            <div class="hero is-large is-info p-2">
+              <div class="hero-head">
+                <p class="title">
+                  Hotdog Finder
+                </p>
+                <p class="subtitle">
+                  Your first stop for hotdogs!
+                </p>
+                <img class="p-3" style="float:right;width:50%" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Sarabi-dog.jpg" alt="dog">
+              </div>
+              <div class="hero-footer">Contact: <a href = "mailto: jk9927@g.rit.edu">jk9927@g.rit.edu</a></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- Main Page -->
+    <main class="px-1 py-1">
+      <div class="has-background-info mr-1 p-1"> 
+        <div class="is-large p-4">
+          <!-- Row #1 -->
+          <div class="title has-text-light">Comic Favorites</div>
+          
+          <!-- Row #2  -->
+          <div class="box mt-2">
+            <h2 class="subtitle has-text-weight-bold mb-0">Instructions</h2>
+            <ol>
+              <li>Checkout your favorite comics below!</li>
+            </ol>
+            <button id="btn-clear-all" class="button is-warning is-medium" title="Clear all Results!">
+              Clear All Results!
+            </button>
+          </div>
+          <!-- Row #3 -->
+          <div class="box has-background-info-dark"> 
+            <div class="is-large p-1">
+              <p id="element-status" class="has-text-warning mb-2">No favorites yet</p>
+              <div id="element-card-holder">
+                <!-- Favorites go here! -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

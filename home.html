@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvle Manager Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="src/md5.min.js"></script>
+    <script type = "module" src="src/init.js"></script>
+    <script type = "module" src = "src/index.js"></script>
+  </head>
+  <body>
+    <nav class = "navbar has-shadow is-white">
+      <div class = "navbar-brand">
+        <a class="navbar-item" href="home.html">
+          <i class="fas fa-book-open"></i>
+        </a>
+        <a class = "navbar-burger" id = "burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class = "navbar-menu" id="nav-links">
+        <div class="navbar-start">
+          <span class="navbar-item has-text-weight-bold">
+            Home
+          </span>
+          <a class="navbar-item is-hoverable" href="app.html">
+            App
+          </a>
+          <a class="navbar-item is-hoverable" href="favorites.html">
+            Favorites
+          </a>
+          <a class="navbar-item is-hoverable" href="documentation.html">
+            Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+        <div class="columns is-centered">
+          <div class="column">  
+            <div class="hero is-large is-info p-2">
+              <div class="hero-head container is-fluid columns is-multiline">
+                <div class="column is-half">  
+                  <p class="title">
+                    Welcome to the Mighty Marvel Manager!
+                  </p>
+                  <p id="initial-description" class="subtitle">
+                    This is a great place to keep up and view the Marvel universe, keep up with comics and find new and interesting heros and villans.  Here you can follow your favorite hereos read a few comics and find new favorites to like, share, and follow.<br>For example to the right: <b>A-Bomb</b>.<br>Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb's thick, armored skin is just as strong and powerful as it is blue. And when he curls into action, he uses it like a giant bowling ball of destruction!
+                  </p>
+                </div>
+                <div class="column is-half">
+                  <img id="primary-image" class="p-3" style="float:right;width:50%" src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg" alt="A-Bomb">
+                </div>
+              <div class="hero-footer">Contact: <a href="mailto:jk9927@g.rit.edu">jk9927@g.rit.edu</a></div>
+              <div class="hero-footer">&emsp;&emsp;Data provided by Marvel. © 2014 Marvel</div>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

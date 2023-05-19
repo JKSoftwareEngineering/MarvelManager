@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+ol
+{
+  list-style-position: inside;
+}
+
+#element-card-holder
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-gap: 0.5em;
+}
